@@ -10,8 +10,6 @@ pipeline {
                 sh '''
                     TOKEN1=f0205833f5def61d264b
                     TOKEN2=71c2ed93acab668acdeb
-                '''
-                sh '''
                     curl "https://api.github.com/repos/software-engineering-II/labs-backend/statuses/$GIT_COMMIT?access_token=${TOKEN1}${TOKEN2}" \
                       -H "Content-Type: application/json" \
                       -X POST \
